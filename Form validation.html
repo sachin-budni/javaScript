@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="table.js"></script>
+	</head>
+	<body>
+		<form name="form1">
+			FirstName :<input type="text" name="firstname"/><br>
+			LastName :<input type="text" name="lastname"/><br>
+			Age :<input type="number" name="age"/><br>
+			Address :<textarea name="address" rows="4" cols="10"></textarea><br>
+			City :<select name="city">
+					<option value="0">Select</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Shivamogga">Shivamogga</option>
+					<option value="Mysore">Mysore</option>
+					<option value="Bagalkot">Bagalkot</option>
+				</select><br>
+			Gender :<input type="radio" name="gender" value="Male"/>Male&nbsp;
+					<input type="radio" name="gender" value="Female"/>Female<br>
+					<input type="button" value="Add" onclick="add()"/>
+
+					<p id='s'></p>
+		</form>
+	</body>
+</html>

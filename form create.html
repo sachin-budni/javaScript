@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<script>
+			function add()
+			{
+				var row=document.form1.rows;
+				var table="<table border='1'>";
+				table+="<tr>";
+				table+="<th>FirstName</th>";
+				table+="<th>LastNameName</th>";
+				table+="<th>Age</th>";
+				table+="<th>Address</th>";
+				table+="<th>City</th>";
+				table+="<th>Gender</th>";
+				table+="</tr>";
+				for(var i=0; i<row.value; i++)
+				{
+					table+="<tr>";
+					table+="<td><input type='text' /></td>";
+					table+="<td><input type='text' /></td>";
+					table+="<td><input type='number' /></td>";
+					table+="<td><input type='text' /></td>";
+					
+					table+="<td><select name='city'>"+
+							"<option>select</option>"+
+							"<option>Bangalore</option>"+
+							"<option>Mysore</option>"+
+							"<option>Bagalkot</option>"+
+							"<option>Shvamogga</option>"+
+							"<option>Rayabag</option>"+
+							"</select>"+
+					"</td>";
+					
+					table+="<td><select name='gender'>"+
+							"<option>select</option>"+
+							"<option>Male</option>"+
+							"<option>Female</option>"+
+							"</select>"+
+					"</td>";
+					table+="<td><input type='button' value='Add'></td>";
+					table+="</tr>";
+				}
+				document.getElementById('footer').innerHTML=table;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="form1">
+			<table>
+				<tr>
+					<th>Rows</th>
+					<td><input type="text" name="rows"/>
+				</tr>
+	
+				<tr>
+					<th></th>
+					<td><input type="button" value="Click" onclick="add()"/>
+				</tr>
+			</table>
+			<p id="footer"></p>
+		</form>
+	</body>
+</html>

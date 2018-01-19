@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="first">
+        <script type="text/javascript" src="buss.js"></script>
+        From :<br/>
+        <select name="from">
+            <option value="0">Select</option>
+            <option value="Bangalore">Banglore</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Banahatti">Banahatti</option>
+            <option value="Hubli">Hubli</option>
+            <option value="Belguam">Belguam</option>
+            <option value="Shivamogga">Shivamogga</option>
+        </select><br/>
+        To :<br/>
+        <select name="to" onchange="togoo()">
+            <option value="0">Select</option>
+            <option value="Bangalore">Banglore</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Banahatti">Banahatti</option>
+            <option value="Hubli">Hubli</option>
+            <option value="Belguam">Belguam</option>
+            <option value="Shivamogga">Shivamogga</option>
+        </select><br/>
+        <input type="button" value="Search" onclick="go()"/>
+        </form>
+        <div id="s1"></div>
+    </body>
+</html>

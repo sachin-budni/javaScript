@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style>
+			.ro
+			{
+				font-weight:bold;
+				font-family:"Times New Roman", Times, serif;
+				background-color:#66ff8c;
+				padding:5px;
+			}
+			#addl
+			{
+				background-color:#ffcc99;
+				width:100px;
+			}
+		</style>
+		<script name="text/script">
+			function add()
+			{
+				var table="<table border='1'>";
+				var row=document.form1.row;
+				var col=document.form1.col;
+				for(var i=0; i<row.value; i++)
+				{
+					table+="<tr>";
+					for(var j=0; j<col.value; j++)
+					{
+						table+="<td><input type='text' name='tab'/></td>";
+					}
+					table+="</tr>";
+				}
+				table+="</table>";
+				document.getElementById('footer').innerHTML=table;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="form1">
+		<table>
+		<tr>
+		<th>Rows :</th><td><input type="number" name="row" class="ro"/></td></tr>
+		<tr>
+		<th>Cols :</th><td><input type="number" name="col" class="ro"/></td></tr>
+		<tr>
+		<td></td>
+		<td><input type="button" class="ro" value="ADD" id="addl" onclick="add()"/><br/></td></tr>
+		</table>
+		<p id="footer"></p>
+		</form>
+	</body>
+</html>

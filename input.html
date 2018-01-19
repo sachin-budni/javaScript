@@ -1,0 +1,15 @@
+<input type="text" name="nama" id="s" onkeyup="kj()"/>
+<input type="text" name="nama" id="s1" onkeyup="k()"/>
+<p id ='dh'></p>
+<script>
+function kj()
+{
+	document.getElementById('s1').value=document.getElementById('s').value;
+	document.getElementById('dh').innerHTML=document.getElementById('s1').value;
+}
+
+function k()
+{
+	document.getElementById('dh').innerHTML=document.getElementById('s1').value;
+}
+</script>
